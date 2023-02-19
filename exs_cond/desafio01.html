@@ -13,12 +13,11 @@
     <script>
         function enter(){
             var país = window.document.getElementById('txtp')
-            var res = window.document.getElementById('res')
-            res.innerHTML = `teste`
-            if(país != 'Brasil'){
-                res.innerHTML = `Você é estrangeiro!`
+            var tes = String(txtp.value)
+            if(país == 'BRASIL'){
+                res.innerText = 'Você é brasileiro!'
             } else {
-                res.innerHTML = `Você é Brasileiro!`
+                res.innerText = 'Você é estrangeiro!'
             }
         }
     </script>
